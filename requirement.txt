@@ -1,0 +1,28 @@
+# RAG 本地知识库问答系统 依赖清单
+# 适用 Python 3.10；安装：pip install -r requirement.txt
+
+# --- 向量数据库 ---
+chromadb==1.5.9
+
+# --- 文本嵌入与向量化 ---
+sentence-transformers==6.0.1
+
+# --- 大模型调用（阿里云百炼 OpenAI 兼容接口）---
+openai==3.19.0
+python-dotenv==1.2.3
+
+# --- 文本分块 ---
+langchain-community==0.4.2
+langchain-text-splitters==1.1.2
+langchain-core==1.6.4
+
+# --- 文件加载（PDF / 网页）---
+pypdf==6.19.0
+requests==2.34.2
+beautifulsoup4==4.15.0
+
+# --- 由上述库自动安装的间接依赖（列在此处便于核对版本）---
+# torch==2.13.0
+# transformers==5.16.1
+# onnxruntime==1.23.2
+# numpy==2.2.6
